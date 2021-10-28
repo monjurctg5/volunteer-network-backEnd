@@ -79,6 +79,10 @@ app.delete('/volunteer/:id',async(req,res)=>{
   // client.close();
 });
 
+app.get("/",(req,res)=>{
+  res.send("hello server")
+})
+
 app.listen(port,()=>{
   console.log("server running from",port)
 })
